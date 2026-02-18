@@ -42,3 +42,12 @@ case 'listening':
     <button onclick="checkAnswer('dog')">The Dog</button>
   `;
   break;
+
+function checkAnswer(answer) {
+  const activitySection = document.getElementById('activity');
+  if (answer === 'bear' || answer === 'bee') {
+    activitySection.innerHTML += "<p style='color:green;'>✅ Correct!</p>";
+  } else {
+    activitySection.innerHTML += "<p style='color:red;'>❌ Try again!</p>";
+  }
+}
