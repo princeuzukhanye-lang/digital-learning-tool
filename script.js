@@ -17,3 +17,14 @@ function startActivity(skill) {
       activitySection.innerHTML = "<p>Select a skill to begin!</p>";
   }
 }
+
+case 'reading':
+  activitySection.innerHTML = `
+    <h2>Reading Activity</h2>
+    <p><strong>Passage:</strong> The sun was shining brightly. The children played outside and laughed together.</p>
+    <p>Question: What were the children doing?</p>
+    <button onclick="checkAnswer('playing')">They were playing</button>
+    <button onclick="checkAnswer('sleeping')">They were sleeping</button>
+    <button onclick="checkAnswer('eating')">They were eating</button>
+  `;
+  break;
