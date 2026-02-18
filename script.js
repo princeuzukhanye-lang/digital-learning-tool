@@ -28,3 +28,17 @@ case 'reading':
     <button onclick="checkAnswer('eating')">They were eating</button>
   `;
   break;
+
+case 'listening':
+  activitySection.innerHTML = `
+    <h2>Listening Activity</h2>
+    <audio controls>
+      <source src="assets/The Bear and The Bee - US English accent (TheFableCottage.com).mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+    <p>Question: Who are the main characters in the story?</p>
+    <button onclick="checkAnswer('bear')">The Bear</button>
+    <button onclick="checkAnswer('bee')">The Bee</button>
+    <button onclick="checkAnswer('dog')">The Dog</button>
+  `;
+  break;
